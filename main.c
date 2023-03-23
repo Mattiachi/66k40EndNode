@@ -2,8 +2,15 @@
  * Date:    March 2023
  * Version: v1.0. 
  * 
- * MPLAB X IDE v3.40
- * XC8 v.138 PRO
+ * IDE:         MPLAB X IDE v3.40 (native)
+ *              MPLAB X IDE v3.55 (compatible as well)
+ * 
+ * COMPILER:    XC8 v1.38 PRO  (native)
+ *              XC8 v1.41 PRO (compatible as well)
+ * It is also possible to compile the program without the PRO version of the
+ * compiler due to the rather large memory of the mcu. This is true for all mcu's
+ * with more than 64 KB of program memory              
+ *
  * Microcontroller: PIC18LF66K40 (sleep current 20nA @1.8V)
  * 
  * Description:
