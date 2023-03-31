@@ -41,9 +41,9 @@
  *  RC2 (33) -> NRESET
  *  RD3 (53) -> NSS
  *  
- *  RC3 (50) -> SCK
- *  RC5 (49) -> SDI or MISO
- *  RC4 (51) -> SDO or MOSI
+ *  RD6 (50) -> SCK
+ *  RD7 (49) -> SDI or MISO
+ *  RD5 (51) -> SDO or MOSI
 */
 #include "mcc_generated_files/mcc.h"
 //#include <stdio.h>      // To use printf in EUSART1
