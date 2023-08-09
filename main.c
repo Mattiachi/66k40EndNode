@@ -27,11 +27,6 @@
  * 1) Join LoRaWAN Network sending a string 
  * 2) 1) Blink LED on PortRC7 (1)
  * 
- * To test:
- *  
- * 1) Tx pin for EUSART on pin RC6 (31)
- * 2) Sleeping Mode
- * 3) Add ADC capability
  * 
  *  PIC connection respect to Olimex Radio Module:
  *  RB0 (48) -> DIO5
@@ -46,7 +41,9 @@
  *  RD5 (51) -> SDO or MOSI
 */
 #include "mcc_generated_files/mcc.h"
-//#include <stdio.h>      // To use printf in EUSART1
+#define myLED_SetHigh()            do { LATAbits.LATA0 = 1; } while(0)
+#define myLED_SetLow()             do { LATAbits.LATA0 = 0; } while(0)
+#define myLED_Toggle()             do { LATAbits.LATA0 = ~LATAbits.LATA0; } while(0)
 
 // my functions
 void sendPacket(void);
